@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./index.js"></script>
+    <title>Shop</title>
+    <style>
+      body {
+        background-color: lightslategray;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    SHOP
+    <div id="paymentNetworks" class="payment-networks-container"></div>
+
+    <div id="submitBtnContainer" class="submit-buttons-container">
+      <button id="submitBtn" type="button" class="submit-button">Pay</button>
+    </div>
+
+    <div class="iframes">
+      <div class="iframe1">
+        <iframe
+          id="form-frame"
+          src="http://localhost:3001"
+          frameborder="0"
+          width="300"
+          height="300"
+        ></iframe>
+      </div>
+      <div class="iframe2">
+        <iframe
+          id="iovation-frame"
+          src="http://localhost:3002"
+          frameborder="0"
+          width="300"
+          height="300"
+        ></iframe>
+      </div>
+      <div class="iframe3">
+        <iframe
+          id="riskify-frame"
+          src="http://localhost:3003"
+          frameborder="0"
+          width="300"
+          height="300"
+        ></iframe>
+      </div>
+    </div>
+
+    <div id="logger"></div>
+  </body>
+</html>

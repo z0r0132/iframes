@@ -1,0 +1,20 @@
+{
+  "name": "iframes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "startshop": "http-server -p 3000 ./shop-frame-ppv3",
+    "startiovation": "http-server -p 3002 ./iovation-frame",
+    "startriskify": "http-server -p 3003 ./riskify-frame",
+    "startform": "http-server -p 3001 ./form-frame-selective-native",
+    "start": "run-p startshop startform startiovation startriskify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.0.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
